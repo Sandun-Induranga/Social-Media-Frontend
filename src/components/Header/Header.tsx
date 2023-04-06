@@ -3,7 +3,7 @@ import { AppBar, Box, Toolbar } from "@mui/material";
 const Header = () => {
   return (
     <AppBar>
-      <Toolbar>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box>box</Box>
         <Box>box</Box>
       </Toolbar>
