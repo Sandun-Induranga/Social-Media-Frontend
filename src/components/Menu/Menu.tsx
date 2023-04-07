@@ -1,4 +1,4 @@
-import { Home } from "@mui/icons-material";
+import { Home, Logout, Settings, SwitchAccount } from "@mui/icons-material";
 import {
   Box,
   List,
@@ -23,31 +23,31 @@ const Menu = () => {
               <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
-          {/* Profile */}
+          {/* Account */}
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Home />
+                <SwitchAccount />
               </ListItemIcon>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Account" />
             </ListItemButton>
           </ListItem>
           {/* Profile */}
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Home />
+                <Settings />
               </ListItemIcon>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Settings" />
             </ListItemButton>
           </ListItem>
           {/* Profile */}
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Home />
+                <Logout />
               </ListItemIcon>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Logout" />
             </ListItemButton>
           </ListItem>
         </List>
