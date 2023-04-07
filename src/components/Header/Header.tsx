@@ -5,7 +5,7 @@ import { Notifications } from "@mui/icons-material";
 
 const Header = () => {
   return (
-    <AppBar>
+    <AppBar sx={{ position: "sticky" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box>
           <Diversity3Icon />
