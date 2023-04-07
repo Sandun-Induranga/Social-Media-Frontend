@@ -1,10 +1,11 @@
-import Header from "./components/Header/Header";
+import { Box } from "@mui/material";
+import Content from "./components/Content/Content";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <Box>
+      <Content />
+    </Box>
   );
 };
 
