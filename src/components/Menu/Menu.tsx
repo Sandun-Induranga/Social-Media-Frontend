@@ -14,6 +14,34 @@ const Menu = () => {
     <Box>
       <Paper elevation={1} sx={{ width: 1 / 5, minHeight: "100vh" }}>
         <List>
+          {/* Home */}
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <Home />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+          {/* Profile */}
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <Home />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+          {/* Profile */}
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <Home />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+          {/* Profile */}
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
