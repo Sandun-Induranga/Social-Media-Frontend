@@ -1,8 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 
 const Feed = () => {
   return (
-    <Box sx={{ width: 1 / 5, minHeight: "100vh", bgcolor: "red" }}>Feed</Box>
+    <Box>
+      <Paper elevation={1} sx={{ width: 1 / 5, minHeight: "100vh" }}></Paper>
+    </Box>
   );
 };
 
