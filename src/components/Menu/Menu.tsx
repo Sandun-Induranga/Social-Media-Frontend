@@ -18,7 +18,7 @@ import {
 const Menu = () => {
   return (
     <Box>
-      <Paper elevation={1} sx={{ width: 1 / 5, minHeight: "100vh" }}>
+      <Paper elevation={1} sx={{ minHeight: "100vh" }}>
         <List>
           {/* Home */}
           <ListItem disablePadding>

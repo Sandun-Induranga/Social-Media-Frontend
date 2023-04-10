@@ -1,12 +1,21 @@
 import React from "react";
 import Header from "../Header";
 import Menu from "../Menu";
+import Feed from "../Feed";
+import { Grid } from "@mui/material";
 
 const Content = () => {
   return (
     <>
       <Header />
-      <Menu />
+      <Grid container>
+        <Grid item xs={2}>
+          <Menu />
+        </Grid>
+        <Grid item xs={7}>
+          <Feed />
+        </Grid>
+      </Grid>
     </>
   );
 };

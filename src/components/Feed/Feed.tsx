@@ -1,7 +1,11 @@
-import React from "react";
+import { Box, Paper } from "@mui/material";
 
 const Feed = () => {
-  return <div>Feed</div>;
+  return (
+    <Box>
+      <Paper elevation={1} sx={{ minHeight: "100vh" }}></Paper>
+    </Box>
+  );
 };
 
 export default Feed;
