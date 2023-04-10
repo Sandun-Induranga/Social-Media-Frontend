@@ -1,22 +1,31 @@
+import { MoreVert } from "@mui/icons-material";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
 
 const Post = () => {
   return (
     <Box>
       <Paper sx={{ p: 2 }}>
-        <Grid container sx={{ justifyContent: "center" }}>
+        <Grid
+          container
+          sx={{ justifyContent: "space-between", alignItems: "center" }}
+        >
           <Grid
             item
             sx={{
-              width: 5 / 6,
+              width: 4 / 6,
               justifyContent: "space-between",
               alignItems: "center",
               gap: 2,
             }}
           >
-            <Grid item xs={12}>
-              <Avatar alt="User" src="/static/images/avatar/2.jpg" />
-              <Typography variant="caption">John Cena</Typography>
+            <Grid container sx={{ alignItems: "center", gap: 1 }}>
+              <Grid item>
+                <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+              </Grid>
+
+              <Grid item>
+                <Typography variant="caption">John Cena</Typography>
+              </Grid>
             </Grid>
           </Grid>
           <Grid item>
@@ -27,6 +36,7 @@ const Post = () => {
               <Typography variant="caption">8.30 PM</Typography>
             </Grid>
           </Grid>
+          <MoreVert />
         </Grid>
       </Paper>
     </Box>
