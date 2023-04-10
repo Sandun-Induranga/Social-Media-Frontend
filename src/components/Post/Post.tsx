@@ -1,5 +1,6 @@
 import { MoreVert } from "@mui/icons-material";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
+import postImage from "../../assets/post-image.png";
 
 const Post = () => {
   return (
@@ -38,6 +39,7 @@ const Post = () => {
           </Grid>
           <MoreVert />
         </Grid>
+        <img src={postImage} alt="post" />
       </Paper>
     </Box>
   );
