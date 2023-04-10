@@ -1,6 +1,6 @@
 import { MoreVert } from "@mui/icons-material";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
-import postImage from "../../assets/post-image.png";
+import postImage from "../../assets/post-image.jpg";
 
 const Post = () => {
   return (
@@ -8,7 +8,7 @@ const Post = () => {
       <Paper sx={{ p: 2 }}>
         <Grid
           container
-          sx={{ justifyContent: "space-between", alignItems: "center" }}
+          sx={{ justifyContent: "space-between", alignItems: "center", mb: 1 }}
         >
           <Grid
             item
@@ -39,7 +39,7 @@ const Post = () => {
           </Grid>
           <MoreVert />
         </Grid>
-        <img src={postImage} alt="post" />
+        <img width={"100%"} src={postImage} alt="post" />
       </Paper>
     </Box>
   );
