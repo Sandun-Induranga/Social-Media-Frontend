@@ -4,7 +4,7 @@ import Post from "../Post/Post";
 const Feed = () => {
   return (
     <Box>
-      <Paper elevation={1} sx={{ minHeight: "100vh", py: 6, px: 20, mb: 2 }}>
+      <Paper elevation={1} sx={{ minHeight: "100vh", py: 6, px: 20 }}>
         <Post />
         <Post />
         <Post />

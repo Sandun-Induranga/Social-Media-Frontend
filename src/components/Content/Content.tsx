@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import Menu from "../Menu";
 import Feed from "../Feed";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 const Content = () => {
   return (
@@ -10,7 +10,9 @@ const Content = () => {
       <Header />
       <Grid container>
         <Grid item xs={2}>
-          <Menu />
+          <Box sx={{ position: "fixed" }}>
+            <Menu />
+          </Box>
         </Grid>
         <Grid item xs={7}>
           <Feed />
