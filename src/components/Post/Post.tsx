@@ -5,7 +5,7 @@ import postImage from "../../assets/post-image.jpg";
 const Post = () => {
   return (
     <Box>
-      <Paper sx={{ p: 2 }}>
+      <Paper sx={{ p: 2, mb: 4 }}>
         <Grid
           container
           sx={{ justifyContent: "space-between", alignItems: "center", mb: 1 }}

@@ -1,4 +1,4 @@
-import { AppBar, Avatar, Badge, Box, Toolbar } from "@mui/material";
+import { AppBar, Avatar, Badge, Box, Toolbar, Typography } from "@mui/material";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MailIcon from "@mui/icons-material/Mail";
 import { Notifications } from "@mui/icons-material";
@@ -7,8 +7,9 @@ const Header = () => {
   return (
     <AppBar sx={{ position: "sticky" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Box>
-          <Diversity3Icon />
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Diversity3Icon sx={{ mr: 2 }} />
+          <Typography variant="h6">SOCIAL APP</Typography>
         </Box>
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
           <Badge badgeContent={1} color="error">
