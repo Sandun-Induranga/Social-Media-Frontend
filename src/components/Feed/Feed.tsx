@@ -6,6 +6,8 @@ const Feed = () => {
     <Box>
       <Paper elevation={1} sx={{ minHeight: "100vh", py: 6, px: 20 }}>
         <Post />
+        <Post />
+        <Post />
       </Paper>
     </Box>
   );
