@@ -2,7 +2,15 @@ import { MoreVert } from "@mui/icons-material";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
 import postImage from "../../assets/post-image.jpg";
 
-const Post = () => {
+type PostProps = {
+  name: string;
+  date: string;
+  time: string;
+};
+
+type PostState = {};
+
+const Post = (postProps: PostProps) => {
   return (
     <Box>
       <Paper sx={{ p: 2, mb: 4 }}>
