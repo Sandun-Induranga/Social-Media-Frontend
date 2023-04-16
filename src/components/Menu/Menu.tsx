@@ -5,11 +5,10 @@ import {
   Settings,
   SwitchAccount,
   PrivacyTip,
+  AddCircle,
 } from "@mui/icons-material";
 import {
   Box,
-  Button,
-  Grid,
   List,
   ListItem,
   ListItemButton,
@@ -87,8 +86,27 @@ const Menu = () => {
           <Typography variant="h5" sx={{ mb: 2 }}>
             Ads
           </Typography>
-          <img src={ads} alt="" width={280} />
+          <Typography sx={{ width: 280 }}>
+            <img src={ads} alt="" width="100%" />
+          </Typography>
         </Box>
+        <Paper
+          elevation={7}
+          sx={{
+            m: 2,
+            p: 2,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            borderRadius: 5,
+            cursor: "pointer",
+          }}
+        >
+          <AddCircle fontSize="large" color="primary" />
+          <Typography variant="h6" color="primary">
+            Create New Post
+          </Typography>
+        </Paper>
       </Paper>
     </Box>
   );
