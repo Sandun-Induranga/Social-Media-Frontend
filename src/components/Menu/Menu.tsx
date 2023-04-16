@@ -18,6 +18,7 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
+import ads from "../../assets/ads.jpg";
 
 const Menu = () => {
   return (
@@ -82,18 +83,12 @@ const Menu = () => {
             </ListItemButton>
           </ListItem>
         </List>
-        <Typography variant="h5" sx={{ p: 2 }}>
-          Ads
-        </Typography>
-        <Grid container sx={{ p: 2 }} gap={2}>
-          <Grid item>
-            <Typography variant="h6">Games</Typography>
-          </Grid>
-          <Grid item>{/* <img src={game} alt="" width={"100%"} /> */}</Grid>
-          <Grid item>
-            <Button>View More</Button>
-          </Grid>
-        </Grid>
+        <Box sx={{ p: 2 }}>
+          <Typography variant="h5" sx={{ mb: 2 }}>
+            Ads
+          </Typography>
+          <img src={ads} alt="" width={280} />
+        </Box>
       </Paper>
     </Box>
   );
