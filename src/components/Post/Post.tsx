@@ -60,18 +60,21 @@ const Post = (props: PostProps) => {
           <MoreVert />
         </Grid>
         {props.image}
-        <IconButton aria-label="add to favorites">
-          <FavoriteBorder />
-        </IconButton>
-        <IconButton aria-label="add to favorites">
-          <ChatBubbleOutline />
-        </IconButton>
-        <IconButton aria-label="add to favorites">
-          <Share />
-        </IconButton>
-        <IconButton aria-label="add to favorites">
-          <TurnedInNot />
-        </IconButton>
+
+        <Box>
+          <IconButton aria-label="add to favorites">
+            <FavoriteBorder />
+          </IconButton>
+          <IconButton aria-label="add to favorites">
+            <ChatBubbleOutline />
+          </IconButton>
+          <IconButton aria-label="add to favorites">
+            <Share />
+          </IconButton>
+          <IconButton aria-label="add to favorites">
+            <TurnedInNot />
+          </IconButton>
+        </Box>
       </Paper>
     </Box>
   );

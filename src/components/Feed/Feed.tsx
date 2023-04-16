@@ -13,11 +13,10 @@ const Feed = () => {
       <Paper
         elevation={1}
         sx={{
-          minHeight: "100vh",
+          maxHeight: "100vh",
           py: 6,
           px: 30,
           overflow: "scroll",
-          maxHeight: "100vh",
         }}
       >
         <Post

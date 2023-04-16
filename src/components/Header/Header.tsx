@@ -1,6 +1,7 @@
 import { AppBar, Avatar, Badge, Box, Toolbar, Typography } from "@mui/material";
 import MailIcon from "@mui/icons-material/Mail";
 import { Group, Notifications, Widgets } from "@mui/icons-material";
+import avatar from "../../assets/avatar3.jpg";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
             SANDU
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+        <Box sx={{ display: "flex", gap: 3, alignItems: "center" }}>
           <Badge badgeContent={4} color="error">
             <Group sx={{ color: "white" }} />
           </Badge>
@@ -22,7 +23,7 @@ const Header = () => {
           <Badge badgeContent={4} color="error">
             <Notifications sx={{ color: "white" }} />
           </Badge>
-          <Avatar sx={{ ml: 2 }} alt="User" src="/static/images/avatar/2.jpg" />
+          <Avatar sx={{ ml: 5 }} alt="User" src={avatar} />
         </Box>
       </Toolbar>
     </AppBar>
