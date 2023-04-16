@@ -32,14 +32,14 @@ const Feed = () => {
           date="2023-04-15"
           time="02:37 PM"
           image=<img width={"100%"} src={postImage1} alt="post" />
-          avatar=<Avatar src={avatar2} alt="post" />
+          avatar=<Avatar src={avatar3} alt="post" />
         />
         <Post
           name="Max Max"
           date="2023-04-15"
           time="07:30 AM"
           image=<img width={"100%"} src={postImage3} alt="post" />
-          avatar=<Avatar src={avatar3} alt="post" />
+          avatar=<Avatar src={avatar2} alt="post" />
         />
       </Paper>
     </Box>

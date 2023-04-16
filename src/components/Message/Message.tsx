@@ -1,6 +1,9 @@
 import { Avatar, Box, Button, Card, Grid, Typography } from "@mui/material";
 import game from "../../assets/game.jpg";
 import game2 from "../../assets/game2.jpg";
+import avatar1 from "../../assets/avatar1.jpg";
+import avatar2 from "../../assets/avatar2.jpg";
+import avatar3 from "../../assets/avatar3.jpg";
 
 const Message = () => {
   return (
@@ -28,19 +31,19 @@ const Message = () => {
           </Grid>
           <Grid container columnGap={1}>
             <Grid item>
-              <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="User" src={avatar1} />
             </Grid>
             <Grid item>
-              <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="User" src={avatar2} />
             </Grid>
             <Grid item>
-              <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="User" src={avatar3} />
             </Grid>
             <Grid item>
-              <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="User" src={avatar1} />
             </Grid>
             <Grid item>
-              <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="User" src={avatar3} />
             </Grid>
           </Grid>
           <Grid item>
