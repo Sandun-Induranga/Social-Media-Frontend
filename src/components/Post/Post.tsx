@@ -1,11 +1,13 @@
 import { MoreVert } from "@mui/icons-material";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
 import postImage from "../../assets/post-image.jpg";
+import React from "react";
 
 type PostProps = {
   name: string;
   date: string;
   time: string;
+  image: React.ReactNode;
 };
 
 type PostState = {};
@@ -47,7 +49,7 @@ const Post = (props: PostProps) => {
           </Grid>
           <MoreVert />
         </Grid>
-        <img width={"100%"} src={postImage} alt="post" />
+        {props.image}
       </Paper>
     </Box>
   );
