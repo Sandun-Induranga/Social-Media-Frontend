@@ -34,7 +34,7 @@ const Post = (props: PostProps) => {
               </Grid>
 
               <Grid item>
-                <Typography variant="caption">{props.name}</Typography>
+                <Typography variant="h6">{props.name}</Typography>
               </Grid>
             </Grid>
           </Grid>

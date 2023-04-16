@@ -21,12 +21,12 @@ const Message = () => {
           </Grid>
         </Grid>
       </Card>
-      <Card elevation={1} sx={{ mt: 2 }}>
-        <Grid container sx={{ p: 2 }} gap={2}>
+      <Card elevation={1} sx={{ mt: 5 }}>
+        <Grid container sx={{ p: 2 }} rowGap={2}>
           <Grid item>
             <Typography variant="h6">Friends</Typography>
           </Grid>
-          <Grid container>
+          <Grid container columnGap={1}>
             <Grid item>
               <Avatar alt="User" src="/static/images/avatar/2.jpg" />
             </Grid>
