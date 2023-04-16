@@ -1,6 +1,5 @@
 import { MoreVert } from "@mui/icons-material";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
-import postImage from "../../assets/post-image.jpg";
 import React from "react";
 
 type PostProps = {

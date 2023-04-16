@@ -9,7 +9,7 @@ const Header = () => {
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Diversity3Icon sx={{ mr: 2 }} />
-          <Typography variant="h6">SOCIAL APP</Typography>
+          <Typography variant="h6">SANDU</Typography>
         </Box>
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
           <Badge badgeContent={1} color="error">

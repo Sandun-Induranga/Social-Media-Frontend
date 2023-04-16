@@ -3,6 +3,7 @@ import Header from "../Header";
 import Menu from "../Menu";
 import Feed from "../Feed";
 import { Box, Grid } from "@mui/material";
+import Message from "../Message/Message";
 
 const Content = () => {
   return (
@@ -16,6 +17,9 @@ const Content = () => {
         </Grid>
         <Grid item xs={7}>
           <Feed />
+        </Grid>
+        <Grid item xs={3}>
+          <Message />
         </Grid>
       </Grid>
     </>
