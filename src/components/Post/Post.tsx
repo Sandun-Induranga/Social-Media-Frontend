@@ -1,12 +1,25 @@
-import { MoreVert } from "@mui/icons-material";
-import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
-import React from "react";
+import {
+  FavoriteBorder,
+  MoreVert,
+  ChatBubbleOutline,
+  Share,
+  TurnedInNot,
+} from "@mui/icons-material";
+import {
+  Avatar,
+  Box,
+  Grid,
+  IconButton,
+  Paper,
+  Typography,
+} from "@mui/material";
 
 type PostProps = {
   name: string;
   date: string;
   time: string;
   image: React.ReactNode;
+  avatar: React.ReactNode;
 };
 
 type PostState = {};
@@ -29,9 +42,7 @@ const Post = (props: PostProps) => {
             }}
           >
             <Grid container sx={{ alignItems: "center", gap: 1 }}>
-              <Grid item>
-                <Avatar alt="User" src="/static/images/avatar/2.jpg" />
-              </Grid>
+              <Grid item>{props.avatar}</Grid>
 
               <Grid item>
                 <Typography variant="h6">{props.name}</Typography>
@@ -49,6 +60,18 @@ const Post = (props: PostProps) => {
           <MoreVert />
         </Grid>
         {props.image}
+        <IconButton aria-label="add to favorites">
+          <FavoriteBorder />
+        </IconButton>
+        <IconButton aria-label="add to favorites">
+          <ChatBubbleOutline />
+        </IconButton>
+        <IconButton aria-label="add to favorites">
+          <Share />
+        </IconButton>
+        <IconButton aria-label="add to favorites">
+          <TurnedInNot />
+        </IconButton>
       </Paper>
     </Box>
   );
