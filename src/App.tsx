@@ -3,7 +3,7 @@ import Content from "./components/Content/Content";
 
 const App = () => {
   return (
-    <Box>
+    <Box sx={{ overflow: "hidden" }}>
       <Content />
     </Box>
   );

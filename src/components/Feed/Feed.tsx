@@ -5,7 +5,16 @@ import postImage from "../../assets/post-image.jpg";
 const Feed = () => {
   return (
     <Box>
-      <Paper elevation={1} sx={{ minHeight: "100vh", py: 6, px: 20 }}>
+      <Paper
+        elevation={1}
+        sx={{
+          minHeight: "100vh",
+          py: 6,
+          px: 20,
+          overflow: "scroll",
+          maxHeight: "100vh",
+        }}
+      >
         <Post
           name="Dasun Dasun"
           date="2023-04-16"

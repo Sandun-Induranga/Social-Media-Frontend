@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Header";
 import Menu from "../Menu";
 import Feed from "../Feed";
@@ -9,7 +8,7 @@ const Content = () => {
   return (
     <>
       <Header />
-      <Grid container>
+      <Grid container sx={{ position: "fixed" }}>
         <Grid item xs={2}>
           <Box sx={{ position: "fixed" }}>
             <Menu />
