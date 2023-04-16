@@ -10,7 +10,7 @@ type PostProps = {
 
 type PostState = {};
 
-const Post = (postProps: PostProps) => {
+const Post = (props: PostProps) => {
   return (
     <Box>
       <Paper sx={{ p: 2, mb: 4 }}>
@@ -33,16 +33,16 @@ const Post = (postProps: PostProps) => {
               </Grid>
 
               <Grid item>
-                <Typography variant="caption">John Cena</Typography>
+                <Typography variant="caption">{props.name}</Typography>
               </Grid>
             </Grid>
           </Grid>
           <Grid item>
             <Grid item xs={12}>
-              <Typography variant="caption">2023-04-10</Typography>
+              <Typography variant="caption">{props.date}</Typography>
             </Grid>
             <Grid item xs={12}>
-              <Typography variant="caption">8.30 PM</Typography>
+              <Typography variant="caption">{props.time}</Typography>
             </Grid>
           </Grid>
           <MoreVert />
